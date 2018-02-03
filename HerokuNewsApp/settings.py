@@ -25,10 +25,12 @@ SECRET_KEY = "8vwbeb&d^ek=91uo(nowon=-!9pzvg#h^fyft3+c(3)s1=@o8c"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ALLOWED_HOSTS = []
 
 # Application definition
 
 INSTALLED_APPS = [
+    'HerokuNewsApp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
