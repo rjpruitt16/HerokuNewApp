@@ -21,6 +21,8 @@ requests = "*"
 textblob = "*"
 "beautifulsoup4" = "*"
 "newspaper3k" = "*"
+redis = "*"
+celery = "*"
 
 
 [dev-packages]
