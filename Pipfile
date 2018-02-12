@@ -18,6 +18,9 @@ gunicorn = "==19.7.1"
 "psycopg2" = "==2.7.3.2"
 whitenoise = "==3.3.1"
 requests = "*"
+textblob = "*"
+"beautifulsoup4" = "*"
+"newspaper3k" = "*"
 
 
 [dev-packages]
