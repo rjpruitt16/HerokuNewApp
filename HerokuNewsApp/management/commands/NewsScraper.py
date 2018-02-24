@@ -41,16 +41,21 @@ class Command(BaseCommand):
           newsoutlet=newsoutlet,
           keywords=article.keywords[:10]
         )
+        print(str(ArticlePost))
         #ArticlePost.save()
 
-    def getListOfArticleLinks(self, url, soup):
+    def getListOfArticleLinks(self, soup):
         ## A function to get Article links from front page.
+        print(str(soup))
         for article in soup.find_all('article'):
-            return article.find_all('a', href=True)
+             if article.find_all('a', href=True):
+                 return article.find_all('a', href=True)
+        return soup.find_all('a', href=True)
 
     def FindAndWriteArticle(self, front_page="", newsoutlet="", addToDatabase=True):
         soup = self.makeUrlSoup(front_page)
-        url = self.getListOfArticleLinks(front_page, soup)[0]["href"]
+        print(self.getListOfArticleLinks(soup))
+        url = self.getListOfArticleLinks(soup)[0]["href"]
         article = self.getArticle(url)
         article_name = newsoutlet+"_article.txt"
         blob = TextBlob(article.text)
