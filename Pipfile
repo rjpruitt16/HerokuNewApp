@@ -22,7 +22,8 @@ textblob = "*"
 "beautifulsoup4" = "*"
 "newspaper3k" = "*"
 redis = "*"
-celery = "*"
+apscheduler = "*"
+django-celery-beat = "*"
 
 
 [dev-packages]

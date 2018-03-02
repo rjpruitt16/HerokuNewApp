@@ -5,6 +5,7 @@ from textblob import TextBlob
 from datetime import datetime
 from django.core.management.base import BaseCommand
 from HerokuNewsApp.models import ArticleScheme
+import logging
 
 class Command(BaseCommand):
     args = '<foo bar ...>'
@@ -44,18 +45,36 @@ class Command(BaseCommand):
         print(str(ArticlePost))
         #ArticlePost.save()
 
-    def getListOfArticleLinks(self, soup):
+    def getListOfArticleLinks(self, soup, newsoutlet=""):
         ## A function to get Article links from front page.
-        print(str(soup))
-        for article in soup.find_all('article'):
-             if article.find_all('a', href=True):
-                 return article.find_all('a', href=True)
-        return soup.find_all('a', href=True)
+        tag="article"
+        classNameDict = {}
+
+        infotofindarticledict = {
+          "WashingtonPost": ["div", {"class": "headline"}],
+          "FoxNews": ["article", {"class": "article"}],
+        }
+
+        if newsoutlet in infotofindarticledict.keys():
+            tag, clasNameDict = infotofindarticledict[newsoutlet]
+
+        if classNameDict:
+            for article in soup.find_all(tag, clasNameDict):
+                return article.find_all('a', href=True)
+        else:
+            for article in soup.find_all(tag):
+                return article.find_all('a', href=True)
 
     def FindAndWriteArticle(self, front_page="", newsoutlet="", addToDatabase=True):
         soup = self.makeUrlSoup(front_page)
-        print(self.getListOfArticleLinks(soup))
-        url = self.getListOfArticleLinks(soup)[0]["href"]
+        url = ""
+        try:
+            links = self.getListOfArticleLinks(soup, newsoutlet)[0]["href"]
+            url = links[0]["href"
+        except IndexError:
+            print("No Articles found")
+            return
+        logging.info("Url ", url)
         article = self.getArticle(url)
         article_name = newsoutlet+"_article.txt"
         blob = TextBlob(article.text)
