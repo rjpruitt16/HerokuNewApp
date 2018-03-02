@@ -1,0 +1,5 @@
+https://www.huffingtonpost.com/section/black-voices
+Tap here to turn on desktop notifications to get the news sent straight to you.
+['black', 'voices', 'tap', 'desktop', 'culture', 'sent', 'notifications', 'turn', 'straight', 'style', 'entertainment']
+<newspaper.article.Article object at 0x7f3aa297bc88>
+Sentiment(polarity=0.2, subjectivity=0.4)
