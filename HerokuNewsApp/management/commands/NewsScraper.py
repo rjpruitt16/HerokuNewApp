@@ -1,6 +1,6 @@
 import bs4 as bs
 from urllib.request import Request, urlopen
-from newspaper import Article
+from newspaper import Article, ArticleException
 from textblob import TextBlob
 from datetime import datetime
 from django.core.management.base import BaseCommand
@@ -37,13 +37,13 @@ class Command(BaseCommand):
           text=article.text.replace('\n\n', ' '),
           url=article.url,
           date_joined=datetime.now(),
-          polarity=str(sentiment.polarity)[:4],
-          subjectivity=str(sentiment.subjectivity)[:4],
+          polarity=str(sentiment.polarity)[:5],
+          subjectivity=str(sentiment.subjectivity)[:5],
           newsoutlet=newsoutlet,
           keywords=article.keywords[:10]
         )
-        print(str(ArticlePost))
-        #ArticlePost.save()
+        logging.info(str(ArticlePost))
+        ArticlePost.save()
 
     def getListOfArticleLinks(self, soup, newsoutlet=""):
         ## A function to get Article links from front page.
@@ -52,28 +52,65 @@ class Command(BaseCommand):
 
         infotofindarticledict = {
           "WashingtonPost": ["div", {"class": "headline"}],
-          "FoxNews": ["article", {"class": "article"}],
         }
 
+        blacklist = ["FoxNews", "Bloomberg"]
+        if newsoutlet in blacklist:
+            return []
+
         if newsoutlet in infotofindarticledict.keys():
-            tag, clasNameDict = infotofindarticledict[newsoutlet]
+            tag, classNameDict = infotofindarticledict[newsoutlet]
+            print(infotofindarticledict[newsoutlet])
+
+        logging.info("Tag Searching for ", tag)
+        logging.info("tag class searching for", classNameDict)
 
         if classNameDict:
-            for article in soup.find_all(tag, clasNameDict):
+            for article in soup.find_all(tag, classNameDict):
                 return article.find_all('a', href=True)
         else:
             for article in soup.find_all(tag):
                 return article.find_all('a', href=True)
 
+    def FindArticleFromSiteMap(self, newsoutlet):
+       sitemap_dict = {
+         "WashingtonPost": "https://www.washingtonpost.com/news-opinions-sitemap.xml",
+         "CNN": "http://www.cnn.com/sitemaps/sitemap-articles-2017-11.xml",
+         "HuffingtonPost": "https://www.huffingtonpost.com/sitemap.xml",
+         "FoxNews": "http://www.foxnews.com/sitemap.xml?idx=26",
+         "Bloomberg": "https://www.bloomberg.com/feeds/bpol/sitemap_news.xml"
+         ## NPR has no sitemap
+       }
+       soup = self.makeUrlSoup(sitemap_dict[newsoutlet])
+       return soup.find_all('loc')[0].text
+
     def FindAndWriteArticle(self, front_page="", newsoutlet="", addToDatabase=True):
         soup = self.makeUrlSoup(front_page)
         url = ""
-        try:
-            links = self.getListOfArticleLinks(soup, newsoutlet)[0]["href"]
-            url = links[0]["href"
-        except IndexError:
-            print("No Articles found")
-            return
+        article = ""
+        links = self.getListOfArticleLinks(soup, newsoutlet)
+
+        if not links:
+            links = []
+
+        logging.info("Link", links)
+
+        found_article = False
+        for link in links:
+            if found_article:
+                break
+            try:
+                article = self.getArticle(link["href"])
+                url = link["href"]
+                found_article = True
+            except ArticleException:
+                logging.info("Article3k download error for", newsoutlet)
+
+        if not url:
+            ## Todo Add function for parsing from xml
+            url = self.FindArticleFromSiteMap(newsoutlet)
+            article = self.getArticle(url)
+
         logging.info("Url ", url)
         article = self.getArticle(url)
         article_name = newsoutlet+"_article.txt"

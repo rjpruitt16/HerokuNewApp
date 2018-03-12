@@ -1,7 +1,9 @@
 from subprocess import call
 from apscheduler.schedulers.blocking import BlockingScheduler
+from pytz import timezone
 
 sched = BlockingScheduler()
+central = timezone('US/Central')
 
 @sched.scheduled_job('cron', hour=7)
 def ScrapeNewsWashingtonPost():
@@ -35,7 +37,7 @@ def ScrapeNewsBloomberg():
     call(["python3", "manage.py", "NewsScraper", "--url",
       "https://www.bloomberg.com/", "--news", "Bloomberg"])
 
-@sched.scheduled_job('cron', hour=20)
+@sched.scheduled_job('cron', hour=10, minute="15", timezone=central)
 def test():
     call(["touch", "madeat730.txt"])
 

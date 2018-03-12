@@ -24,6 +24,7 @@ textblob = "*"
 redis = "*"
 apscheduler = "*"
 django-celery-beat = "*"
+pytz = "*"
 
 
 [dev-packages]
