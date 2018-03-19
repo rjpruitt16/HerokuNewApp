@@ -25,6 +25,7 @@ redis = "*"
 apscheduler = "*"
 django-celery-beat = "*"
 pytz = "*"
+nltk = "*"
 
 
 [dev-packages]
