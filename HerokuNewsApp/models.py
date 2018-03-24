@@ -4,7 +4,7 @@ from django.contrib.postgres.fields import ArrayField
 class TruncatingCharField(models.CharField):
     def get_prep_value(self, value):
         value = super(TruncatingCharField, self).get_prep_value(value)
-        if values:
+        if value:
             return value[:self.max_length]
         return value
 
