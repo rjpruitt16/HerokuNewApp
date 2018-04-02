@@ -23,7 +23,7 @@ def ScrapeNewsHuffingtonPost():
       "--news", "HuffingtonPost"])
 
 @sched.scheduled_job('cron', hour=7, timezone=central)
-def ScrapeNewsHuffingtonPost():
+def ScrapeNewsNPRPost():
     call(["python3", "manage.py", "NewsScraper", "--url",
       "https://www.npr.org/sections/politics/", "--news", "NPR"])
 
@@ -36,6 +36,11 @@ def ScrapeNewsFox():
 def ScrapeNewsBloomberg():
     call(["python3", "manage.py", "NewsScraper", "--url",
       "https://www.bloomberg.com/", "--news", "Bloomberg"])
+
+@sched.scheduled_job('cron', hour=7, timezone=central)
+def ScrapeNewsBloomberg():
+    call(["python3", "manage.py", "NewsScraper", "--url",
+      "https://www.nytimes.com/", "--news", "NYT"])
 
 @sched.scheduled_job('cron', hour=10, minute="15", timezone=central)
 def test():

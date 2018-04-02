@@ -24,11 +24,12 @@ class Command(BaseCommand):
         soup = bs.BeautifulSoup(webpage, 'lxml')
         return soup
 
-    def writeArticleToTextFile(self, article, path, keywords, sentiment):
+    def WriteArticleToTextFile(self, article, path, keywords, polarity,
+                               subjectivity):
         with open(path, "w") as text_file:
-            text_file.write('{}\n{}\n{}\n{}\n{}'.format(
-                article.url, article.text.replace('\n\n', ' '),
-                keywords, str(article), sentiment))
+            text_file.write('{}\n{}\n{}\n{}\n{}\n{}'.format(
+                article.title, article.url, article.summary.replace("\n", " "),
+                keywords,polarity, subjectivity))
 
     def AddArticleToDB(self, article, sentiment, newsoutlet):
         article.download()
@@ -60,7 +61,6 @@ class Command(BaseCommand):
 
         if newsoutlet in infotofindarticledict.keys():
             tag, classNameDict = infotofindarticledict[newsoutlet]
-            print(infotofindarticledict[newsoutlet])
 
         logging.info("Tag Searching for ", tag)
         logging.info("tag class searching for", classNameDict)
@@ -115,7 +115,9 @@ class Command(BaseCommand):
         article = self.getArticle(url)
         article_name = newsoutlet+"_article.txt"
         blob = TextBlob(article.text)
-        self.writeArticleToTextFile(article, "article_samples/" + article_name, article.keywords, blob.sentiment)
+        self.WriteArticleToTextFile(article, "article_samples/" + article_name,
+                                    article.keywords, blob.sentiment.polarity,
+                                    blob.sentiment.subjectivity)
         if addToDatabase:
             self.AddArticleToDB(article, blob.sentiment, newsoutlet)
 

@@ -1,5 +1,6 @@
-https://www.bloomberg.com/news/videos/2018-03-12/what-the-trump-kim-meeting-means-for-beijing-video
-What the Trump-Kim Meeting Means for Beijing Paul Haenle, director at the Carnegie-Tsinghua Center for Global Policy, discusses President Trump agreeing to meet with Kim Jong Un, how Beijing feels about the meeting. He speaks on "Bloomberg Markets: Asia." (Source: Bloomberg)
-['trumpkim', 'speaks', 'trump', 'beijing', 'means', 'meeting', 'source', 'policy', 'bloomberg', 'meet', 'president']
-<newspaper.article.Article object at 0x7fd904169438>
-Sentiment(polarity=-0.05, subjectivity=0.05)
+South Korean Bands Perform in Pyongyang Ahead of Summit
+https://www.bloomberg.com/news/videos/2018-04-02/south-korean-bands-perform-in-pyongyang-ahead-of-summit-video
+South Korean Bands Perform in Pyongyang Ahead of SummitK-Pop girl band Red Velvet performed in front of an audience including North Korean leader Kim Jong Un and his wife, with 10 other South Korean music groups, at the first of two concerts this week in Pyongyang, Yonhap News reported. Bloomberg's Peter Pae reports on "Bloomberg Daybreak: Asia." (Source: Bloomberg)
+['ahead', 'bloomberg', 'velvet', 'wife', 'source', 'korean', 'bands', 'summitkpop', 'summit', 'yonhap', 'week', 'pyongyang', 'south', 'perform']
+0.041666666666666664
+0.23611111111111108

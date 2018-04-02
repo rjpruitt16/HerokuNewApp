@@ -1,5 +1,0 @@
-http://video.foxnews.com/v/5739553013001/
-
-['govt', 'parkland', 'massacre', 'levels', 'villain', 'tucker']
-<newspaper.article.Article object at 0x7f4addbbe4e0>
-Sentiment(polarity=0.0, subjectivity=0.0)
