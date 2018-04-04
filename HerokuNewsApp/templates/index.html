@@ -104,19 +104,19 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{% static "pictures/NYT.png" %}" alt="Generic placeholder image" width="140" height="140">
             <h2>New York Times</h2>
             <p> {{ NYT_Text }}...</p>
             <p><a class="btn btn-secondary" href="{{ NYT_Url }}" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{% static "pictures/CNN.png" %}" alt="Generic placeholder image" width="140" height="140">
             <h2> CNN </h2>
             <p> {{ CNN_Text }}... </p>
             <p><a class="btn btn-secondary" href="{{ CNN_Text }}" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{% static "pictures/Huffington.png" %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Huffington Post</h2>
             <p> {{ HuffingtonPost_Text }}...</p>
             <p><a class="btn btn-secondary" href="{{ HuffingtonPost_Url }}" role="button">View details &raquo;</a></p>
@@ -125,19 +125,19 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{% static "pictures/Fox.jpeg" %}" alt="Generic placeholder image" width="140" height="140">
             <h2> Fox News </h2>
             <p> {{ FoxNews_Text }}...</p>
             <p><a class="btn btn-secondary" href="{{FoxNews_Url}}" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{% static "pictures/NPR.png" %}" alt="Generic placeholder image" width="140" height="140">
             <h2> NPR </h2>
             <p> {{ NPR_Text }}...</p>
             <p><a class="btn btn-secondary" href="{{ NPR_Url }}" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{% static "pictures/Washington.png" %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Washington Post</h2>
             <p> {{ WashingtonPost_Text }}...</p>
             <p><a class="btn btn-secondary" href="{{ WashingtonPost_Url }}" role="button">View details &raquo;</a></p>
@@ -151,11 +151,9 @@
 
     <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
     <script>
-       console.log({{washington_sentiment_x}});
-       console.log({{washington_sentiment_y}});
        var trace1 = {
          x: [{{WashingtonPost_Polarity}}, {{CNN_Polarity}}, {{HuffingtonPost_Polarity}}, {{NYT_Polarity}}, {{ FoxNews_Polarity }}, {{ NPR_Polarity }}],
-         y: [{{WashingtonPost_Subjectivity}}, {{CNN_Subjectivity}}, {{HuffingtonPost_Subjectivity}}, {{NYT_Subjectivity}}, {{ Foxnews_Subjectivity}}, {{ NPR_Subjectivity }}],
+         y: [{{WashingtonPost_Subjectivity}}, {{CNN_Subjectivity}}, {{HuffingtonPost_Subjectivity}}, {{NYT_Subjectivity}}, {{ FoxNews_Subjectivity}}, {{ NPR_Subjectivity }}],
          mode: 'markers',
          type: 'scatter',
          name: 'Team A',
