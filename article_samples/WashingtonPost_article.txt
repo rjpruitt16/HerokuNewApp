@@ -1,6 +1,6 @@
-Trade war escalates as China says it will impose tariffs on 128 U.S. exports, including pork and fruit
-https://www.washingtonpost.com/news/business/wp/2018/04/01/trade-war-escalates-as-china-vows-to-impose-tariffs-on-128-u-s-exports-including-pork-and-fruit/
-China exported $505 billion in goods to the U.S., and U.S. companies exported $135 billion in goods to China in 2017. Trump’s trade approach has been inconsistent, making it difficult for allies and foreign leaders to know what he plans to do. It also appears to be the first country to retaliate to his trade threats, putting pressure on leaders in Washington and Beijing to anticipate each other’s next moves quickly. The stock market rose sharply during Trump’s first year in office, but it has slid back more than 10 percent since late January amid concerns that Trump’s trade threats could roil world markets. His senior advisers, though, say Trump’s trade approach will help U.S. workers by creating more jobs and boosting U.S. exports abroad.
-['trade', 'chinese', 'impose', 'goods', 'tariffs', 'approach', 'threats', 'exports', 'war', 'escalates', 'fruit', 'china', 'pork', 'trump', 'trumps', 'including']
-0.07087862754529421
-0.3764590347923681
+‘When you lose that power’: How John Kelly faded as White House disciplinarian
+https://www.washingtonpost.com/politics/when-you-lose-that-power-how-john-kelly-faded-as-white-house-disciplinarian/2018/04/07/5e5b8b42-39be-11e8-acd5-35eac230e514_story.html
+The recurring and escalating clashes between the president and his chief of staff trace the downward arc of Kelly’s eight months in the White House. White House Chief of Staff John F. Kelly and then-Deputy Chief of Staff Kirstjen Nielsen prepare to board Marine One last summer. [‘Pure madness’: Dark days inside the White House as Trump shocks and rages]Senior White House officials said Chief of Staff John F. Kelly told them to give information about staff secretary Rob Porter's ouster that contradicts other reports. As chief of staff, Kelly was thrust into the role of disciplinarian. In fact, Kelly has threatened to resign on multiple occasions — “It’s sort of a weekly event,” one senior White House official quipped — though officials explained his declarations as expressions of momentary frustration.
+['john', 'secretary', 'kelly', 'faded', 'disciplinarian', 'staff', 'oval', 'chief', 'president', 'kellys', 'trump', 'house', 'power', 'lose', 'white']
+0.04190536315536315
+0.3565711603211603

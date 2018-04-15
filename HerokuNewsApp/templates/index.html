@@ -150,6 +150,7 @@
 
 
     <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+    <div id="myDiv2"><!-- Plotly chart will be drawn inside this DIV --></div>
     <script>
        var trace1 = {
          x: [{{WashingtonPost_Polarity}}, {{CNN_Polarity}}, {{HuffingtonPost_Polarity}}, {{NYT_Polarity}}, {{ FoxNews_Polarity }}, {{ NPR_Polarity }}],
@@ -171,6 +172,38 @@
       title:'Data Labels Hover'
       };
       Plotly.newPlot('myDiv', data, layout);
+
+      var bing = {
+        x: {{Bing_PolarityArray}},
+        y: {{Bing_SubjectivityArray}},
+        mode: 'markers',
+        type: 'scatter',
+        name: 'Bing',
+        text: {{Bing_UrlArray}},
+        marker: { size: 12 }
+      };
+
+      var cnn = {
+        x: {{CNN_PolarityArray}},
+        y: {{CNN_SubjectivityArray}},
+        mode: 'markers',
+        type: 'scatter',
+        name: 'CNN',
+        text: {{CNN_SubjectivityArray}},
+        marker: { size: 12 }
+      };
+
+     var data = [ bing, cnn];
+     var layout = {
+       xaxis: {
+       range: [ -1.25, 1.25 ]
+     },
+       yaxis: {
+       range: [0, 1]
+     },
+     title:'Data Labels Hover'
+     };
+     Plotly.newPlot('myDiv2', data, layout);
    </script>
 
       <!-- FOOTER -->

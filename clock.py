@@ -42,8 +42,4 @@ def ScrapeNewsBloomberg():
     call(["python3", "manage.py", "NewsScraper", "--url",
       "https://www.nytimes.com/", "--news", "NYT"])
 
-@sched.scheduled_job('cron', hour=10, minute="15", timezone=central)
-def test():
-    call(["touch", "madeat730.txt"])
-
 sched.start()
