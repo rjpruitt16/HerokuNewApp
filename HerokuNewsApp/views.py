@@ -13,7 +13,7 @@ def GetArticleSchemeDict(newsoutlets):
             articleSchemeDict[newsoutlet + "_PolarityArray"].append(article.polarity)
             articleSchemeDict[newsoutlet + "_SubjectivityArray"].append(article.subjectivity)
             articleSchemeDict[newsoutlet + "_UrlArray"].append(article.url)
-       return articleSchemeDict
+    return articleSchemeDict
 
 def getWords(article, number_of_words):
     if number_of_words > len(article):
