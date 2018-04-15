@@ -57,4 +57,5 @@ def index(request):
               newsoutlets.append(newsoutlet)
         print(article_dict.keys())
         db_article_dict = GetArticleSchemeDict(newsoutlets)
+        print(db_article_dict)
     return render(request, "index.html", article_dict, db_article_dict)
