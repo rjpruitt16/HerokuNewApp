@@ -1,6 +1,6 @@
-The Fall Of Harriet Miers: A Cautionary Tale For Dr. Ronny Jackson?
-https://www.npr.org/2018/03/30/598115811/the-fall-of-harriet-miers-a-cautionary-tale-for-dr-ronny-jackson
-The Fall Of Harriet Miers: A Cautionary Tale For Dr. Ronny Jackson? Miers was White House counsel when President George W. Bush stunned Washington by nominating her to the Supreme Court in October 2005. In 2003, she became deputy chief of staff for policy and, the following year, White House counsel. At that point, the White House announced that Miers had asked to withdraw her nomination — just three weeks into the process. But Jackson, like Miers, must face confirmation by the Senate, where initial reaction to his nomination was muted.
-['jackson', 'fall', 'department', 'va', 'veterans', 'bush', 'cautionary', 'nomination', 'dr', 'president', 'white', 'harriet', 'ronny', 'tale', 'miers', 'house']
-0.13144284287141433
-0.3803822368108081
+Kentucky Governor Apologizes For Comments On Teachers' Strike
+https://www.npr.org/sections/thetwo-way/2018/04/15/602671694/kentucky-governor-apologizes-for-comments-on-teachers-strike
+Kentucky Governor Apologizes For Comments On Teachers' StrikeEnlarge this image toggle caption Bryan Woolston/AP Bryan Woolston/APKentucky Gov. Matt Bevin is apologizing for saying a teachers' strike left hundreds of thousands of children vulnerable to sexual assault and drug use. Bevin's comments provoked anger and a rapid backlash from teachers' groups and state politicians. Matt Bevin released a video in which he apologized for comments he made on teachers' protests. The protests in Kentucky follow teachers' demonstrations across several states, demanding higher pay and more funding for education.
+['strike', 'apologizes', 'republicans', 'kentucky', 'bevin', 'protests', 'teachers', 'governor', 'state', 'funding', 'say', 'tax', 'comments']
+0.11789772727272727
+0.4674715909090909

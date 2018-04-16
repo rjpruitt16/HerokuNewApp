@@ -1,6 +1,6 @@
-The Kushners Saw Redemption in the White House. It Was a Mirage.
-https://www.nytimes.com/2018/04/01/us/charles-jared-kushner-white-house-real-estate.html
-Federal prosecutors in Brooklyn are studying whether one of Mr. Kushner’s daughters dangled White House influence before prospective Chinese investors. Jared Kushner’s White House meetings with lenders and partners of Kushner Companies have raised repeated questions about conflicts between his official and personal interests. Most recently, the head of the federal Office of Government Ethics informed a House member in a letter that he had asked the White House counsel to examine meetings in the White House last year between Jared Kushner and officials from two financial companies. Sarah Huckabee Sanders, the White House press secretary, said on Tuesday that the counsel’s office was not investigating whether Mr. Kushner broke the law. PhotoOn top of all of this, the political prize at the root of those travails — Jared Kushner’s White House post — appears to be losing its luster.
-['mr', 'federal', 'mirage', 'kushners', 'redemption', 'saw', 'charles', 'house', 'jared', 'josh', 'white', 'kushner', 'investors']
-0.05143220106410288
-0.34086920918209257
+In Interview, Comey Calls Trump ‘Morally Unfit’ and a ‘Stain’ on All Around Him
+https://www.nytimes.com/2018/04/15/us/politics/comey-interview-trump.html
+Mr. Comey said Mr. Trump denied the allegations that day, saying, “Do I look like a guy who needs hookers?” Weeks later, in a telephone call after the dossier was published by BuzzFeed, Mr. Trump again denied the account in graphic terms, Mr. Comey said. “There’s no way I’d let people pee on each other around me,” Mr. Trump said, according to Mr. Comey’s account. Mr. Comey said he warned Mr. Trump that doing so would add to “the narrative” that the president was under investigation. I don’t know,” Mr. Comey told Mr. Stephanopolous. In the ABC interview, Mr. Comey said he believed at the time that it would be extremely damaging to the credibility of the F.B.I.
+['continue', 'interview', 'mr', 'comey', 'calls', 'stain', 'president', 'book', 'know', 'twitter', 'unfit', 'morally', 'trump', 'reading']
+0.06747898237028672
+0.42370725892465017

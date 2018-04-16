@@ -1,6 +1,6 @@
-Man on trans-Pacific voyage in ocean rowboat rescued
-http://www.foxnews.com/us/2017/11/08/man-on-trans-pacific-voyage-in-ocean-rowboat-rescued.html
-The U.S. Coast Guard has rescued a Chinese man off Hawaii who was voyaging from California to Asia in an ocean rowboat. The Coast Guard identifies him as 32-year-old Ruihn Yu, a Chinese national who was rescued Tuesday about 35 miles off the island of Maui. According to the Coast Guard, Yu left California in June and was headed for China and Taiwan when his 18-foot vessel developed communication failures and a damaged rudder. Yu's friend notified the Coast Guard that Yu was in possible distress after receiving a text message from Yu on a two-way satellite communication device. Coast Guard spokeswoman Tara Molle says Yu plans to stay on Maui while a friend sends him parts for repairs.
-['rescued', 'plans', 'yu', 'ocean', 'voyage', 'man', 'friend', 'rowboat', 'china', 'communication', 'chinese', 'california', 'guard', 'transpacific', 'coast']
-0.016666666666666666
-0.3833333333333333
+Benghazi militant charged for providing material support, resources to terrorists
+http://www.foxnews.com/politics/2017/11/08/benghazi-militant-charged-for-providing-material-support-resources-to-terrorists.html
+A Libyan national involved in the 2012 attack on a U.S. diplomatic compound in Benghazi, Libya, was indicted in U.S. District Court Wednesday. Mustafa al-Imam was charged with one count of conspiracy to provide material support and resources to terrorists resulting in death. Al-Imam -- who was allegedly involved in the September 11, 2012 Benghazi attack which killed four Americans, including Amb. The militant made his first appearance in court on Nov. 5, when he was ordered held without bond pending a detention hearing on Nov. 9. Al-Imam had been previously charged in a criminal complaint, which carries a maximum sentence of life in prison.
+['resources', 'providing', 'material', 'involved', 'killed', 'nov', 'militant', 'support', 'stevens', 'charged', 'alimam', 'attack', 'court', 'terrorists', 'benghazi']
+-0.10654761904761904
+0.25892857142857145

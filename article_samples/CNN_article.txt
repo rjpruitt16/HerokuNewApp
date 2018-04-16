@@ -1,6 +1,6 @@
 Suspect in Rand Paul assault pleads not guilty
 https://www.cnn.com/2017/11/09/politics/rand-paul-rene-boucher-kentucky-assault/index.html
 Story highlights Sen. Rand Paul sustained six rib fractures in an attackThe fight had nothing to do with politics, Boucher's attorney has saidWashington (CNN) The man who allegedly assaulted GOP Sen. Rand Paul outside his Kentucky residence pleaded not guilty Thursday to misdemeanor assault in the fourth degree at his arraignment in Bowling Green. Doug Stafford, a senior adviser to Paul, told CNN Thursday that Boucher attacked the senator without any prior conversation. "Last week, Sen. Paul was vigorously assaulted by someone in his neighborhood. This is a serious criminal matter involving serious injury, and is being handled by local and federal authorities," Stafford told CNN in a statement. He continued: "The first 'conversation' with the attacker came after Sen. Paul's ribs were broken.
-['stafford', 'told', 'paul', 'rand', 'sen', 'serious', 'ribs', 'suspect', 'cnn', 'fight', 'pauls', 'guilty', 'assault', 'pleads']
+['told', 'rand', 'assault', 'pleads', 'fight', 'cnn', 'stafford', 'ribs', 'serious', 'paul', 'pauls', 'suspect', 'sen', 'guilty']
 -0.06481481481481481
 0.3661375661375661

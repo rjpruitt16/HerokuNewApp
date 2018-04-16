@@ -1,6 +1,6 @@
 Contempter-in-Chief: The Richard Nixon Quiz
 http://www.huffingtonpost.com/paul-slansky-/contempterinchief-the-ric_b_67875.html
 CORRECTION: A previous version of this quiz claimed Richard Nixon called Judge John Sirica a "wop" on tape. Test your knowledge of Tricky Dick's bountiful Oval Office bile:1) What did Richard Nixon call his Secretary of the Treasury, George Shultz? 3) How did Richard Nixon describe Supreme Court Justice Potter Stewart? 4) How did Richard Nixon describe Supreme Court Justice Thurgood Marshall? 7) How did Richard Nixon describe Supreme Court Justice William Brennan?
-['nixon', 'quiz', 'court', 'justice', 'william', 'old', 'richard', 'c', 'supreme', 'b', 'contempterinchief', 'bastardb']
+['justice', 'bastardb', 'court', 'richard', 'old', 'william', 'c', 'nixon', 'contempterinchief', 'b', 'quiz', 'supreme']
 -0.20297459893048136
 0.5142833881804469

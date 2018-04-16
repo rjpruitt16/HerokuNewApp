@@ -161,7 +161,7 @@
          text: ['Washington Post', 'CNN', 'Huffington Post', 'New York Times', 'Fox News', 'NPR'],
          marker: { size: 12 }
        };
-      var data = [ trace1];
+      var data = [trace1];
       var layout = {
         xaxis: {
         range: [ -1.25, 1.25 ]
@@ -173,27 +173,67 @@
       };
       Plotly.newPlot('myDiv', data, layout);
 
-      var bing = {
-        x: {{Bing_PolarityArray}},
-        y: {{Bing_SubjectivityArray}},
+      var WashingtonPost = {
+        x: {{WashingtonPost_PolarityArray}},
+        y: {{WashingtonPost_SubjectivityArray}},
         mode: 'markers',
         type: 'scatter',
-        name: 'Bing',
-        text: {{Bing_UrlArray}},
+        name: 'WashingtonPost',
+        text: {{WashingtonPost_TitleArray|safe}},
         marker: { size: 12 }
       };
 
-      var cnn = {
+      var CNN = {
         x: {{CNN_PolarityArray}},
         y: {{CNN_SubjectivityArray}},
         mode: 'markers',
         type: 'scatter',
         name: 'CNN',
-        text: {{CNN_SubjectivityArray}},
+        text: {{CNN_TitleArray|safe}},
         marker: { size: 12 }
       };
 
-     var data2 = [bing, cnn];
+      var NPR = {
+        x: {{NPR_PolarityArray}},
+        y: {{NPR_SubjectivityArray}},
+        mode: 'markers',
+        type: 'scatter',
+        name: 'NPR',
+        text: {{NPR_TitleArray|safe}},
+        marker: { size: 12 }
+      };
+
+      var HuffingtonPost = {
+        x: {{HuffingtonPost_PolarityArray}},
+        y: {{HuffingtonPost_SubjectivityArray}},
+        mode: 'markers',
+        type: 'scatter',
+        name: 'HuffingtonPost',
+        text: {{HuffingtonPost_TitleArray|safe}},
+        marker: { size: 12 }
+      };
+
+      var Bloomberg = {
+        x: {{Bloomberg_PolarityArray}},
+        y: {{Bloomberg_SubjectivityArray}},
+        mode: 'markers',
+        type: 'scatter',
+        name: 'Bloomberg',
+        text: {{Bloomberg_TitleArray|safe}},
+        marker: { size: 12 }
+      };
+
+      var NYT = {
+        x: {{NYT_PolarityArray}},
+        y: {{NYT_SubjectivityArray}},
+        mode: 'markers',
+        type: 'scatter',
+        name: 'NYT',
+        text: {{NYT_TitleArray|safe}},
+        marker: { size: 12 }
+      };
+
+     var data2 = [WashingtonPost, CNN, NPR, HuffingtonPost, Bloomberg, NYT];
      var layout2 = {
        xaxis: {
        range: [ -1.25, 1.25 ]
@@ -203,7 +243,7 @@
      },
      title:'Data Labels Hover'
      };
-     Plotly.newPlot('myDiv2', data2 layout2);
+     Plotly.newPlot('myDiv2', data2, layout2);
    </script>
 
       <!-- FOOTER -->

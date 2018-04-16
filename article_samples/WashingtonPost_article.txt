@@ -1,6 +1,6 @@
-‘When you lose that power’: How John Kelly faded as White House disciplinarian
-https://www.washingtonpost.com/politics/when-you-lose-that-power-how-john-kelly-faded-as-white-house-disciplinarian/2018/04/07/5e5b8b42-39be-11e8-acd5-35eac230e514_story.html
-The recurring and escalating clashes between the president and his chief of staff trace the downward arc of Kelly’s eight months in the White House. White House Chief of Staff John F. Kelly and then-Deputy Chief of Staff Kirstjen Nielsen prepare to board Marine One last summer. [‘Pure madness’: Dark days inside the White House as Trump shocks and rages]Senior White House officials said Chief of Staff John F. Kelly told them to give information about staff secretary Rob Porter's ouster that contradicts other reports. As chief of staff, Kelly was thrust into the role of disciplinarian. In fact, Kelly has threatened to resign on multiple occasions — “It’s sort of a weekly event,” one senior White House official quipped — though officials explained his declarations as expressions of momentary frustration.
-['john', 'secretary', 'kelly', 'faded', 'disciplinarian', 'staff', 'oval', 'chief', 'president', 'kellys', 'trump', 'house', 'power', 'lose', 'white']
-0.04190536315536315
-0.3565711603211603
+Comey says Trump ‘morally unfit to be president,’ possibly susceptible to Russian blackmail
+https://www.washingtonpost.com/world/national-security/comey-says-trump-morally-unfit-to-be-president-possibly-susceptible-to-russian-blackmail/2018/04/15/eabd4b7e-3ffa-11e8-a7d1-e4efec6389f0_story.html
+On Sunday morning, Trump tweeted criticism of Comey, denying some of Comey’s allegations and alleging that Comey revealed classified information and lied to Congress. “Do you think the Russians have something on Donald Trump?” Stephanopoulos asked. These are more words I never thought I’d utter about a president of the United States, but it’s possible,” Comey responded. Trump cited the memo in firing Comey, and Comey said he came to believe Rosenstein was “part of the family now. Throughout the interview, Comey stressed the importance of telling the truth, a theme in his book.
+['possible', 'general', 'susceptible', 'comey', 'possibly', 'president', 'comeys', 'fbi', 'morally', 'clinton', 'blackmail', 'trump', 'interview', 'unfit', 'russian', 'stephanopoulos']
+0.04488514075378483
+0.49343510773595506

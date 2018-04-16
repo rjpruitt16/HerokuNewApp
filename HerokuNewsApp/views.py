@@ -3,16 +3,16 @@ from os import listdir
 from HerokuNewsApp.models import ArticleScheme
 
 def GetArticleSchemeDict(newsoutlets):
+    articleSchemeDict = {}
     for newsoutlet in newsoutlets:
         articleSet = ArticleScheme.objects.filter(newsoutlet=newsoutlet)
-        articleSchemeDict = {}
         articleSchemeDict[newsoutlet + "_PolarityArray"] = []
         articleSchemeDict[newsoutlet + "_SubjectivityArray"] = []
-        articleSchemeDict[newsoutlet + "_UrlArray"] = []
+        articleSchemeDict[newsoutlet + "_TitleArray"] = []
         for article in articleSet:
-            articleSchemeDict[newsoutlet + "_PolarityArray"].append(article.polarity)
-            articleSchemeDict[newsoutlet + "_SubjectivityArray"].append(article.subjectivity)
-            articleSchemeDict[newsoutlet + "_UrlArray"].append(article.url)
+            articleSchemeDict[newsoutlet + "_PolarityArray"].append(float(article.polarity))
+            articleSchemeDict[newsoutlet + "_SubjectivityArray"].append(float(article.subjectivity))
+            articleSchemeDict[newsoutlet + "_TitleArray"].append(article.title)
     return articleSchemeDict
 
 def getWords(article, number_of_words):
@@ -55,7 +55,6 @@ def index(request):
                                             newsoutlet))
           if newsoutlet not in newsoutlets:
               newsoutlets.append(newsoutlet)
-        print(article_dict.keys())
-        db_article_dict = GetArticleSchemeDict(newsoutlets)
-        print(db_article_dict)
-    return render(request, "index.html", article_dict, db_article_dict)
+    db_article_dict = GetArticleSchemeDict(newsoutlets)
+    article_dict.update(db_article_dict)
+    return render(request, "index.html", article_dict)

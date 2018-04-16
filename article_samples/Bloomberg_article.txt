@@ -1,6 +1,6 @@
-South Korean Bands Perform in Pyongyang Ahead of Summit
-https://www.bloomberg.com/news/videos/2018-04-02/south-korean-bands-perform-in-pyongyang-ahead-of-summit-video
-South Korean Bands Perform in Pyongyang Ahead of SummitK-Pop girl band Red Velvet performed in front of an audience including North Korean leader Kim Jong Un and his wife, with 10 other South Korean music groups, at the first of two concerts this week in Pyongyang, Yonhap News reported. Bloomberg's Peter Pae reports on "Bloomberg Daybreak: Asia." (Source: Bloomberg)
-['ahead', 'bloomberg', 'velvet', 'wife', 'source', 'korean', 'bands', 'summitkpop', 'summit', 'yonhap', 'week', 'pyongyang', 'south', 'perform']
-0.041666666666666664
-0.23611111111111108
+Control Risks' Chamorro Says Syria Attack Was Message to Russia
+https://www.bloomberg.com/news/videos/2018-04-16/control-risks-chamorro-says-syria-attack-was-message-to-russia-video
+Control Risks' Chamorro Says Syria Attack Was Message to RussiaDane Chamorro, senior partner at Control Risks, discusses the missile attack on Syria over the weekend and new sanctions against Russia. He speaks on "Bloomberg Markets: Asia." (Source: Bloomberg)
+['risks', 'message', 'control', 'source', 'senior', 'russia', 'attack', 'weekend', 'syria', 'chamorro', 'speaks', 'bloomberg']
+0.13636363636363635
+0.45454545454545453
